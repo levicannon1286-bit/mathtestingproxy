@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Proxy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Web Proxy</h1>
+    <form id="proxy-form">
+      <input type="url" id="url-input" placeholder="Enter website URL" required>
+      <button type="submit">Load Website</button>
+    </form>
+    <div id="error-message" class="error-message"></div>
+    <iframe id="proxy-frame" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-top-navigation"></iframe>
+  </div>
+  <script src="proxy.js"></script>
+</body>
+</html>
